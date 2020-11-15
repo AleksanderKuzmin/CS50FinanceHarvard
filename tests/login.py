@@ -15,6 +15,8 @@ class MyTestCase(unittest.TestCase):
         login_text = browser.find_element_by_xpath('//*[@id="navbar"]/ul/li[2]/a').text
         self.assertEqual('Log In', login_text)
 
+        browser.quit()
+
 
 if __name__ == '__main__':
     unittest.main()
